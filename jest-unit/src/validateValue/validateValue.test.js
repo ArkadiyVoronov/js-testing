@@ -14,4 +14,10 @@ describe('validateValue', () => {
     test('More of the correct', () => {
         expect(validateValue(101)).toBe(false);
     })
+    test('Boundary value from the bottom', () => {
+        expect(validateValue(0)).toBe(true);
+    })
+    test('Boundary value from the upper', () => {
+        expect(validateValue(100)).toBe(true);
+    })
 })
