@@ -2,8 +2,12 @@ const square = require('./square');
 
 describe('square', () => {
     let mockValue;
+    // Before every test
     beforeEach( () => {
         mockValue = Math.random();
+    })
+    // Once before all tests
+    beforeAll( () => {
     })
     test('Correct value', () => {
         expect(square(2)).toBe(4);
