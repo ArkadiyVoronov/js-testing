@@ -1,6 +1,10 @@
 const square = require('./square');
 
 describe('square', () => {
+    let mockValue;
+    beforeEach( () => {
+        mockValue = Math.random();
+    })
     test('Correct value', () => {
         expect(square(2)).toBe(4);
         expect(square(2)).toBeLessThan(5);
