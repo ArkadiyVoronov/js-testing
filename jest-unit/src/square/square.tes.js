@@ -15,4 +15,11 @@ describe('square', () => {
         expect(square(2)).toBeGreaterThan(3);
         expect(square(2)).not.toBeUndefined();
     })
+    /* After each test, for example, 
+        delete the created test user from the database*/
+    afterEach( () => {
+    })
+    // After all the tests
+    afterAll( () => {
+    })
 })
